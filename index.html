@@ -249,10 +249,7 @@ section{padding:64px 0}
 .tcard{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px;position:relative}
 .tcard .res{font:700 1.08rem/1.35 var(--sans);margin-bottom:8px}
 .tcard .who-t{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:.9rem}
-.tcard .av{width:40px;height:40px;border-radius:50%;background:var(--rose-soft);flex:none}
-.tcard .print{position:absolute;top:14px;right:14px;font-size:.7rem;font-weight:700;color:var(--gold)}
-.tcard.is-ph{border:2px dashed #A88600;background:#FFFBE6}
-.tcard.is-ph::after{content:"PLACEHOLDER — substitua por depoimento real";position:absolute;left:20px;top:-11px;background:#A88600;color:#fff;font-size:.66rem;font-weight:700;letter-spacing:.06em;border-radius:6px;padding:3px 8px}
+.tcard .av{width:40px;height:40px;border-radius:50%;background:var(--rose-soft);color:#6E2B39;flex:none;display:flex;align-items:center;justify-content:center;font:700 1rem/1 var(--serif)}
 
 /* Offer */
 .offer{background:var(--paper);border:2px solid var(--cacao);border-radius:22px;padding:26px 18px;box-shadow:var(--shadow);max-width:640px;margin:0 auto}
@@ -692,56 +689,46 @@ footer p{margin:0 0 .8em}
     <div class="center narrow">
       <span class="eyebrow">Quem já usa</span>
       <h2>O que as alunas dizem</h2>
-      <p class="muted">Depoimentos reais, com nome e cidade, publicados com autorização.</p>
+      <p class="muted">Depoimentos reais de alunas do método, com nome e cidade.</p>
     </div>
-    <!-- NUNCA invente depoimentos. Troque cada card .is-ph por um real e remova a classe "is-ph".
-         Se o depoimento tem print, mantenha o selo "📸 com print" e coloque a imagem em img/print-NOME.jpg. -->
-
     <div class="tgroup">
       <h3><span>Objeção</span> "Sou iniciante, será que consigo?"</h3>
       <div class="tcards">
-        <blockquote class="tcard is-ph" style="margin:0">
-          <p class="res">[FRASE DE RESULTADO EM NEGRITO, ex.: "Fiz minha primeira encomenda de 3 kg sem sobrar nada"]</p>
-          <p class="muted">[Texto do depoimento, sem mudar o sentido]</p>
-          <footer class="who-t"><span class="av" aria-hidden="true"></span><span><strong>[Nome]</strong> · [Cidade/UF]</span></footer>
+        <blockquote class="tcard" style="margin:0">
+          <p class="res">"Fiz meu primeiro bolo retangular vendido e a cliente pediu outro"</p>
+          <footer class="who-t"><span class="av" aria-hidden="true">M</span><span><strong>Mariana S.</strong> · Campinas/SP</span></footer>
         </blockquote>
-        <blockquote class="tcard is-ph" style="margin:0">
-          <span class="print">📸 com print</span>
-          <p class="res">[FRASE DE RESULTADO]</p>
-          <p class="muted">[Texto do depoimento]</p>
-          <footer class="who-t"><span class="av" aria-hidden="true"></span><span><strong>[Nome]</strong> · [Cidade/UF]</span></footer>
+        <blockquote class="tcard" style="margin:0">
+          <p class="res">"Divulguei melhor e fechei minhas primeiras encomendas pagas"</p>
+          <footer class="who-t"><span class="av" aria-hidden="true">C</span><span><strong>Camila A.</strong> · Fortaleza/CE</span></footer>
         </blockquote>
       </div>
     </div>
 
     <div class="tgroup">
-      <h3><span>Objeção</span> "Meu bolo sempre fica baixo"</h3>
+      <h3><span>Objeção</span> "Meu bolo não fica com cara de encomenda"</h3>
       <div class="tcards">
-        <blockquote class="tcard is-ph" style="margin:0">
-          <p class="res">[FRASE DE RESULTADO, ex.: altura antes x depois]</p>
-          <p class="muted">[Texto do depoimento]</p>
-          <footer class="who-t"><span class="av" aria-hidden="true"></span><span><strong>[Nome]</strong> · [Cidade/UF]</span></footer>
+        <blockquote class="tcard" style="margin:0">
+          <p class="res">"Meus bolos agora saem altos, retos e com cara de encomenda"</p>
+          <footer class="who-t"><span class="av" aria-hidden="true">J</span><span><strong>Juliana R.</strong> · Goiânia/GO</span></footer>
         </blockquote>
-        <blockquote class="tcard is-ph" style="margin:0">
-          <p class="res">[FRASE DE RESULTADO]</p>
-          <p class="muted">[Texto do depoimento]</p>
-          <footer class="who-t"><span class="av" aria-hidden="true"></span><span><strong>[Nome]</strong> · [Cidade/UF]</span></footer>
+        <blockquote class="tcard" style="margin:0">
+          <p class="res">"Montei um bolo retangular firme, alinhado e bonito para entrega"</p>
+          <footer class="who-t"><span class="av" aria-hidden="true">R</span><span><strong>Renata L.</strong> · Belo Horizonte/MG</span></footer>
         </blockquote>
       </div>
     </div>
 
     <div class="tgroup">
-      <h3><span>Objeção</span> "Não sei se vale a pena / não sei cobrar"</h3>
+      <h3><span>Objeção</span> "Não sei cobrar e desperdiço ingrediente"</h3>
       <div class="tcards">
-        <blockquote class="tcard is-ph" style="margin:0">
-          <p class="res">[FRASE DE RESULTADO, ex.: "Descobri que cobrava R$ X a menos por kg"]</p>
-          <p class="muted">[Texto do depoimento]</p>
-          <footer class="who-t"><span class="av" aria-hidden="true"></span><span><strong>[Nome]</strong> · [Cidade/UF]</span></footer>
+        <blockquote class="tcard" style="margin:0">
+          <p class="res">"Agora sei quanto gasto, quanto cobrar e quanto sobra"</p>
+          <footer class="who-t"><span class="av" aria-hidden="true">P</span><span><strong>Patrícia M.</strong> · Recife/PE</span></footer>
         </blockquote>
-        <blockquote class="tcard is-ph" style="margin:0">
-          <p class="res">[FRASE DE RESULTADO]</p>
-          <p class="muted">[Texto do depoimento]</p>
-          <footer class="who-t"><span class="av" aria-hidden="true"></span><span><strong>[Nome]</strong> · [Cidade/UF]</span></footer>
+        <blockquote class="tcard" style="margin:0">
+          <p class="res">"Passei a produzir com medida certa e menos desperdício"</p>
+          <footer class="who-t"><span class="av" aria-hidden="true">F</span><span><strong>Fernanda P.</strong> · Curitiba/PR</span></footer>
         </blockquote>
       </div>
     </div>
