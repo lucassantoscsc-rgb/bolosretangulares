@@ -144,7 +144,6 @@ section{padding:52px 0}
 .checks{list-style:none;padding:0;margin:0 0 22px}
 .checks li{position:relative;padding-left:32px;margin-bottom:10px}
 .checks li::before{content:"";position:absolute;left:0;top:3px;width:22px;height:22px;border-radius:50%;background:var(--rose) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/14px no-repeat}
-.crosses li::before{background:#8C7A70 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round'%3E%3Cpath d='M7 7l10 10M17 7L7 17'/%3E%3C/svg%3E") center/13px no-repeat}
 
 /* Product mockup (capa real do ebook) */
 .cover-img{position:relative;z-index:1;width:170px;height:auto;border-radius:6px;box-shadow:18px 22px 40px -14px rgba(42,23,14,.5);transform:perspective(1000px) rotateY(-10deg) translateX(-34px)}
@@ -156,33 +155,8 @@ section{padding:52px 0}
 .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
 .scene{border-left:4px solid var(--rose);background:var(--paper);border-radius:0 var(--r) var(--r) 0;padding:16px 18px;margin:0 0 12px}
 .scene p{margin:0}
-.cost{margin-top:28px;background:var(--cacao);color:var(--on-cacao);border-radius:var(--r);padding:22px}
-.cost h3{color:#fff}
-.cost table{width:100%;border-collapse:collapse;font-size:.95rem}
-.cost td{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.14);vertical-align:top}
-.cost td:last-child{text-align:right;white-space:nowrap;padding-left:10px;font-weight:700}
-.cost tr.total td{border-bottom:0;font-size:1.1rem;color:#F0B9C1;padding-top:14px}
-.cost .fine{font-size:.88rem;color:var(--on-cacao-muted);margin:12px 0 0}
 
-/* Mechanism */
-.forms{display:flex;align-items:flex-end;justify-content:center;gap:22px;margin:26px 0;flex-wrap:wrap}
-.forms figure{margin:0;text-align:center;font-size:.9rem}
-.forms .f{background:repeating-linear-gradient(45deg,#F3E0D9,#F3E0D9 8px,#EBD2CE 8px,#EBD2CE 16px);border:2px solid var(--rose);border-radius:6px;margin:0 auto 8px}
-.steps{counter-reset:s;display:grid;gap:14px;margin:24px 0}
-.step{position:relative;padding:18px 18px 18px 64px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r)}
-.step::before{counter-increment:s;content:counter(s);position:absolute;left:16px;top:16px;width:34px;height:34px;border-radius:50%;background:var(--rose);color:#fff;font:700 1rem/34px var(--serif);text-align:center}
-.step p{margin:0}
-.analogy{font-family:var(--serif);font-size:1.22rem;line-height:1.4;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;margin:26px 0;text-align:center}
 
-/* Free tool */
-.tool{background:var(--paper);border:2px solid var(--rose-soft);border-radius:18px;padding:22px;margin-top:30px}
-.tool .gift{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--rose);padding:5px 10px;border-radius:999px;margin-bottom:10px}
-.tool label{display:block;font-weight:600;font-size:.92rem;margin:12px 0 6px}
-.tool select,.tool input{width:100%;font:inherit;font-size:16px;padding:12px;border:1px solid #CDB9AA;border-radius:10px;background:#fff;color:var(--ink)}
-.tool .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.tool .custom{display:none}
-.tool .out{margin-top:18px;background:var(--bg2);border-radius:12px;padding:16px;font-size:1rem}
-.tool .out .big{font:700 2rem/1.1 var(--serif);color:var(--rose)}
 
 /* Story */
 .story-grid{display:grid;gap:26px;align-items:start}
@@ -190,7 +164,6 @@ section{padding:52px 0}
 .stat{background:var(--paper);border:1px solid var(--line);border-radius:12px;text-align:center;padding:14px 6px}
 .stat b{display:block;font:700 1.35rem/1.1 var(--serif);color:var(--rose)}
 .stat span{font-size:.8rem;color:var(--muted)}
-.quote{font:600 1.35rem/1.35 var(--serif);color:var(--rose);margin:22px 0}
 
 /* Image placeholders (auto-trocados por img/ quando o arquivo existir) */
 .ph-img{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:repeating-linear-gradient(135deg,#F1E4DC,#F1E4DC 12px,#EDDDD3 12px,#EDDDD3 24px);border:2px dashed #C9AE9E;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-size:.82rem;padding:14px}
@@ -200,6 +173,17 @@ section{padding:52px 0}
 .ph-img.loaded img{width:100%;height:100%;object-fit:cover}
 .story-grid .ph-img.loaded img{object-position:50% 22%}
 
+/* Dor enxuta e lista do que recebe */
+.cost-line{margin-top:18px;background:var(--cacao);color:var(--on-cacao);border-radius:var(--r);padding:16px 18px;font-size:.98rem}
+.cost-line strong{color:#fff}
+.items{list-style:none;padding:0;margin:24px 0}
+.items li{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin-bottom:10px}
+.items .ic{font-size:1.5rem;line-height:1;flex:none;margin-top:2px}
+.items b{display:block;font-size:1.05rem;margin-bottom:3px}
+.items div{font-size:.96rem;color:var(--muted)}
+.items div b{color:var(--ink)}
+.preview{max-width:460px;margin:0 auto}
+
 /* Dois caminhos */
 .path h3{margin-top:10px}
 .path-tag{display:inline-block;font-size:.8rem;font-weight:700;background:var(--rose-soft);color:#6E2B39;border-radius:999px;padding:5px 11px}
@@ -208,24 +192,7 @@ section{padding:52px 0}
 .who{display:grid;gap:16px}
 .who .card h3{display:flex;align-items:center;gap:8px}
 
-/* Before/after */
-.ba{width:100%;border-collapse:separate;border-spacing:0;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;font-size:.95rem}
-.ba th,.ba td{padding:13px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
-.ba tr:last-child td{border-bottom:0}
-.ba thead th{font:700 .82rem/1.2 var(--sans);letter-spacing:.06em;text-transform:uppercase}
-.ba thead th:first-child{background:#EFE6E0;color:#6B5A50}
-.ba thead th:last-child{background:var(--rose);color:#fff}
-.ba td:first-child{color:#6B5A50;width:50%}
-.ba td:last-child{font-weight:600}
 
-/* Modules */
-.mod{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;display:grid;gap:18px}
-.mod + .mod{margin-top:18px}
-.mod .num{font:700 .78rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
-.mod h3{font-size:1.4rem;margin-top:6px}
-.fbr{list-style:none;padding:0;margin:0;display:grid;gap:8px;font-size:.96rem}
-.fbr li{padding-left:0}
-.fbr b{display:block;margin-bottom:2px;color:var(--rose);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
 
 .page{background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);padding:16px;font-size:.8rem;overflow:hidden}
 .page .ph-head{display:flex;justify-content:space-between;font:700 .66rem/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:10px}
@@ -236,12 +203,7 @@ section{padding:52px 0}
 .locked{position:relative}
 .locked .veil{position:absolute;left:0;right:0;bottom:0;height:60%;background:linear-gradient(180deg,rgba(255,255,255,0),#fff 70%);display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px}
 .locked .veil span{background:var(--cacao);color:#fff;font-weight:700;font-size:.75rem;border-radius:999px;padding:6px 12px}
-.scroll-x{overflow-x:auto;-webkit-overflow-scrolling:touch}
 
-.page-img{margin:0;max-width:340px;justify-self:center;border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff}
-.page-img img{width:100%;height:auto}
-.chips{list-style:none;padding:0;margin:16px 0 0;display:flex;flex-wrap:wrap;gap:6px}
-.chips li{font-size:.8rem;font-weight:600;background:var(--rose-soft);color:#6E2B39;border-radius:999px;padding:5px 10px}
 
 /* Gallery */
 .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
@@ -257,8 +219,6 @@ section{padding:52px 0}
   .gallery::-webkit-scrollbar{display:none}
   .gallery figure{flex:0 0 74%;scroll-snap-align:center}
   .swipe-hint{display:block;text-align:center;font-size:.88rem;font-weight:600;color:var(--rose);margin:14px 0 -12px}
-  .page-img{max-width:220px}
-  .mod{padding:18px}
 }
 
 /* Prints de conversas */
@@ -342,10 +302,8 @@ body>footer p{margin:0 0 .8em}
   .sheet-img{width:225px;transform:translate(104px,20px) rotate(7deg)}
   .grid-2,.who,.choices{grid-template-columns:1fr 1fr}
   .story-grid{grid-template-columns:.8fr 1.2fr}
-  .mod{grid-template-columns:1.1fr .9fr;align-items:center}
   .gallery{grid-template-columns:repeat(3,1fr)}
   .guar{grid-template-columns:200px 1fr}
-  .steps{grid-template-columns:repeat(3,1fr)}
   .offer{padding:34px 36px}
 }
 @media (min-width:900px){
@@ -405,36 +363,19 @@ body>footer p{margin:0 0 .8em}
 
 <main>
 
-<!-- =============== 2. DOR (PAS) =============== -->
+<!-- =============== 2. DOR =============== -->
 <section id="dor">
   <div class="wrap narrow">
     <span class="eyebrow">Onde o dinheiro escapa</span>
     <h2>Você faz bolo gostoso. Mas o dinheiro não aparece.</h2>
-    <p class="lead">Quem vende bolo em casa raramente perde dinheiro por falta de talento. Perde nos detalhes que ninguém ensinou: quantidade, preço e organização.</p>
-
-    <div class="scene"><p>A cliente pergunta <em>"quanto fica o de 3 kg?"</em>. Você chuta um valor parecido com o da vizinha… e depois descobre que <strong>trabalhou de graça</strong>.</p></div>
-    <div class="scene"><p>Sobram <strong>500 g de brigadeiro</strong> na geladeira. De novo. É ingrediente pago que não vira venda.</p></div>
-    <div class="scene"><p>O bolo sai baixo e você bate outra massa: <strong>mais ovo, mais gás, mais madrugada</strong>, e o mesmo preço cobrado.</p></div>
-    <div class="scene"><p>Chega um pedido de <strong>8 kg</strong> para uma festa e você recusa, por medo de errar. <strong>Esse dinheiro vai para outra confeiteira.</strong></p></div>
-    <div class="scene"><p>E se você ainda nem começou: quer vender, mas <strong>não sabe o que oferecer, quanto fazer nem quanto cobrar</strong>. Então vai adiando.</p></div>
-
-    <div class="cost">
-      <h3>Quanto dinheiro o achismo leva embora?</h3>
-      <table>
-        <tr><td>Sobra de 400 g de recheio × 8 bolos/mês (recheio a R$ 30/kg)</td><td>R$ 96</td></tr>
-        <tr><td>1 massa refeita por mês (ingredientes + gás)</td><td>R$ 40</td></tr>
-        <tr><td>Cobrar R$ 5/kg abaixo do custo real em 20 kg/mês</td><td>R$ 100</td></tr>
-        <tr class="total"><td>Prejuízo escondido por mês</td><td>R$ 236</td></tr>
-        <tr class="total"><td>Em 12 meses</td><td>R$ 2.832</td></tr>
-      </table>
-      <p class="fine">Simulação de exemplo. Troque pelos seus números: o seu prejuízo pode ser menor ou bem maior. E isso sem contar o sono perdido e as encomendas que você recusou.</p>
-    </div>
-
-    <p class="micro center" style="margin-top:26px"><strong>Se pelo menos uma dessas cenas é sua, continue lendo.</strong> Existe um jeito de fazer cada bolo valer a pena.</p>
+    <div class="scene"><p>Você chuta o preço, parecido com o da vizinha… e depois descobre que <strong>trabalhou de graça</strong>.</p></div>
+    <div class="scene"><p>Sobra recheio na geladeira, a massa sai baixa e você refaz. <strong>É ingrediente pago que não vira venda.</strong></p></div>
+    <div class="scene"><p>Chega uma encomenda grande e você recusa por medo. Ou nem começa a vender porque <strong>não sabe o que oferecer nem quanto cobrar</strong>.</p></div>
+    <p class="cost-line">Numa simulação simples, sobra, retrabalho e preço abaixo do custo levam cerca de <strong>R$ 236 por mês</strong>. Não é falta de talento. <strong>É falta de método.</strong></p>
   </div>
 </section>
 
-<!-- =============== 2b. DOIS CAMINHOS =============== -->
+<!-- =============== 3. DOIS CAMINHOS =============== -->
 <section id="caminhos" class="alt">
   <div class="wrap">
     <div class="center narrow">
@@ -466,266 +407,43 @@ body>footer p{margin:0 0 .8em}
   </div>
 </section>
 
-<!-- =============== 3. MECANISMO =============== -->
-<section id="metodo">
-  <div class="wrap narrow">
-    <span class="eyebrow">Por que tanta confeiteira trabalha muito e lucra pouco</span>
-    <h2>Lucro de bolo se perde na quantidade. E <span class="hl">receita comum não sabe o tamanho da sua forma.</span></h2>
-    <p>Toda receita diz "rende 1 forma". Mas <em>qual</em> forma? A de quem escreveu. Quando você usa a mesma receita numa forma maior, a massa se espalha e o bolo fica baixo. Numa forma menor, transborda ou fica cru no meio.</p>
-    <p>Olha a diferença entre três formas que estão no meu guia:</p>
-
-    <div class="forms" aria-label="Comparação de áreas de forma">
-      <figure><div class="f" style="width:60px;height:45px"></div><b>20×15</b><br><span class="muted">300 cm²</span></figure>
-      <figure><div class="f" style="width:90px;height:66px"></div><b>30×22</b><br><span class="muted">660 cm²</span></figure>
-      <figure><div class="f" style="width:120px;height:90px"></div><b>40×30</b><br><span class="muted">1.200 cm²</span></figure>
-    </div>
-
-    <p>A forma 40×30 tem <strong>4 vezes a área</strong> da 20×15. Por isso, no meu guia, a 20×15 leva <strong>800 g</strong> de massa crua e a 40×30 leva <strong>3,2 kg</strong>: quatro vezes mais. Não é o fermento. Não é o forno. <strong>É geometria.</strong></p>
-    <p>E o recheio acompanha: de <strong>800 g a 1 kg</strong> na 20×15 para <strong>4 kg</strong> na 40×30. Quem faz "no olho" erra: se sobra, é ingrediente pago jogado fora; se falta, é bolo que não sai no padrão. <strong>Nos dois casos, quem perde é o seu lucro.</strong></p>
-
-    <p class="analogy">"A costureira não corta o tecido no olho. Ela usa um molde.<br>A tabela é o molde do seu bolo."</p>
-
-    <h3>Como funciona o <span data-c="metodo">[MÉTODO]</span></h3>
-    <div class="steps">
-      <div class="step"><p><strong>Escolha a forma.</strong> Ex.: 25×17, para um bolo de cerca de 4 kg.</p></div>
-      <div class="step"><p><strong>A tabela da forma te dá a referência:</strong> 1,2 kg de massa crua, 1,6 kg de recheio (800 g por camada) e 700 g de cobertura.</p></div>
-      <div class="step"><p><strong>Feche o orçamento:</strong> 35 a 40 fatias estimadas e preço calculado na ficha de custo.</p></div>
-    </div>
-    <p class="center"><strong>Não é talento. É método.</strong> E é o método que transforma bolo em renda.</p>
-
-    <!-- Reciprocidade: ferramenta gratuita -->
-    <div class="tool" id="conversor">
-      <span class="gift">Presente para você</span>
-      <h3>Conversor de forma: use agora, é grátis</h3>
-      <p class="muted" style="margin:0">Sua receita dá certo numa forma e você precisa fazer em outra? Descubra por quanto multiplicar cada ingrediente para manter a mesma altura.</p>
-
-      <div class="row">
-        <div>
-          <label for="fromSel">Minha receita é para a forma</label>
-          <select id="fromSel"></select>
-        </div>
-        <div>
-          <label for="toSel">Quero fazer na forma</label>
-          <select id="toSel"></select>
-        </div>
-      </div>
-      <div class="row custom" id="fromCustom">
-        <div><label for="fromW">Origem: largura (cm)</label><input id="fromW" type="number" inputmode="decimal" min="1" value="20"></div>
-        <div><label for="fromH">Origem: comprimento (cm)</label><input id="fromH" type="number" inputmode="decimal" min="1" value="15"></div>
-      </div>
-      <div class="row custom" id="toCustom">
-        <div><label for="toW">Destino: largura (cm)</label><input id="toW" type="number" inputmode="decimal" min="1" value="30"></div>
-        <div><label for="toH">Destino: comprimento (cm)</label><input id="toH" type="number" inputmode="decimal" min="1" value="40"></div>
-      </div>
-      <label for="qty">Um ingrediente da sua receita (em gramas)</label>
-      <input id="qty" type="number" inputmode="decimal" min="0" value="500">
-
-      <div class="out" aria-live="polite">
-        <div>Multiplique tudo por</div>
-        <div class="big" id="factor">× 4,00</div>
-        <div id="explain" style="margin-top:6px"></div>
-      </div>
-      <p class="micro" style="margin-bottom:0">É uma estimativa pela área, para manter a <em>mesma altura</em>. No guia você encontra a massa crua, o recheio, a cobertura e as fatias de referência de cada forma, de 1,7 a 10 kg, e uma ficha de teste para calibrar no seu forno.</p>
-    </div>
-
-    <div style="margin-top:30px">
-      <a class="cta" href="#oferta" data-checkout>Quero as tabelas completas por forma<small><span data-installments>[N]x de R$ [X,XX]</span></small></a>
-    </div>
-  </div>
-</section>
-
-<!-- =============== 4. HISTÓRIA (Epiphany Bridge) =============== -->
-<section id="historia">
-  <div class="wrap story-grid">
-    <figure class="ph-img" data-src="img/autora-cozinha.jpg" data-alt="Mary, confeiteira, sorrindo na cozinha ao lado de um bolo retangular recém-assado" style="aspect-ratio:4/5">
-      <div class="ph-label">Foto real da autora<b>img/autora-cozinha.jpg</b>1080×1350 · na cozinha, com um bolo retangular</div>
-    </figure>
-    <div>
-      <span class="eyebrow">Quem vai te ensinar</span>
-      <h2>Oi, eu sou a <span data-c="autora">[AUTORA]</span>.</h2>
-
-      <!-- Estrutura: começo → erro → virada → hoje. Para aumentar a força da "virada", vale incluir
-           uma cena real e específica (ex.: um bolo que deu errado, forma, peso, o que mudou depois). -->
-      <p>Eu comecei do jeito mais simples: na minha própria cozinha, fazendo bolos para a família, os amigos e as pessoas próximas. Não tinha muitos recursos nem equipamento profissional. Tinha <strong>vontade de aprender, dedicação</strong> e o desejo de entregar bolo feito com carinho.</p>
-      <p>Como muita gente que começa de baixo, aprendi na prática. <strong>Testei receitas, errei massas, ajustei recheios, refiz acabamentos.</strong> Cada encomenda era uma chance de melhorar um pouco mais.</p>
-      <p>Com o tempo, fui entendendo o que realmente funcionava. Comecei a estudar, a observar os detalhes e a <strong>criar uma forma organizada de trabalhar</strong>. Foi assim que aprimorei meus próprios métodos, até chegar a bolos bonitos, saborosos, bem estruturados e com acabamento profissional.</p>
-      <p>Em <strong>10 anos</strong>, transformei a confeitaria em profissão e me especializei em <strong>bolos retangulares</strong>. Hoje eu compartilho tudo o que aprendi para você começar com mais segurança, ou melhorar seus resultados e vender com mais confiança.</p>
-
-      <p class="quote">"Hoje eu sei: não é talento, é método. E método dá para ensinar."</p>
-
-      <div class="stats">
-        <div class="stat"><b data-c="anos">[X]</b><span>anos de confeitaria</span></div>
-        <div class="stat"><b data-c="alunas">[N]</b><span>alunas e clientes</span></div>
-      </div>
-      <p class="micro">Juntei neste material o que aprendi em 10 anos transformando a cozinha em profissão, para você começar a vender (ou vender melhor) sem precisar descobrir errando como eu descobri.</p>
-    </div>
-  </div>
-</section>
-
-<!-- =============== 5. PARA QUEM É / NÃO É =============== -->
-<section id="para-quem" class="alt">
-  <div class="wrap">
-    <div class="center narrow">
-      <span class="eyebrow">Seja sincera com você</span>
-      <h2>Esse material é para você?</h2>
-    </div>
-    <div class="who" style="margin-top:26px">
-      <div class="card">
-        <h3>✅ É para você se…</h3>
-        <ul class="checks">
-          <li>Quer uma <strong>renda extra ou principal</strong> vendendo bolos feitos em casa</li>
-          <li>Está <strong>começando do zero</strong> e quer saber o que oferecer e quanto cobrar</li>
-          <li>Já vende e quer <strong>lucrar mais</strong> com cada encomenda</li>
-          <li>Quer parar de perder dinheiro com <strong>sobra, retrabalho e preço no chute</strong></li>
-          <li>Gosta de material <strong>prático, para imprimir</strong> e consultar na bancada</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>🚫 Não é para você se…</h3>
-        <ul class="checks crosses">
-          <li>Procura <strong>dinheiro fácil</strong> sem colocar a mão na massa</li>
-          <li>Espera uma <strong>renda garantida</strong>. O resultado depende do seu trabalho e das suas vendas.</li>
-          <li>Quer <strong>videoaulas</strong>: aqui é um guia em PDF, direto ao ponto</li>
-          <li>Busca <strong>decoração artística</strong> ou bolo de andar</li>
-        </ul>
-      </div>
-    </div>
-    <p class="micro center" style="margin-top:22px">Se você marcou mais itens na primeira coluna, eu fiz esse material pensando em você. 👇</p>
-  </div>
-</section>
-
-<!-- =============== 6. ANTES x DEPOIS =============== -->
-<section id="transformacao">
+<!-- =============== 4. O QUE VOCÊ RECEBE =============== -->
+<section id="conteudo">
   <div class="wrap narrow">
     <div class="center">
-      <span class="eyebrow">A transformação</span>
-      <h2>Da cozinha que gasta à cozinha que lucra</h2>
-    </div>
-    <div class="scroll-x" style="margin-top:22px">
-      <table class="ba">
-        <thead><tr><th scope="col">Antes (no achismo)</th><th scope="col">Depois (com o método)</th></tr></thead>
-        <tbody>
-          <tr><td>Preço copiado da concorrente</td><td>Preço calculado com lucro, pela ficha de custo</td></tr>
-          <tr><td>Recheio sobrando: dinheiro parado na geladeira</td><td>Compra na medida certa para cada forma</td></tr>
-          <tr><td>Massa refeita de madrugada, mesmo preço cobrado</td><td>Massa crua de referência para cada forma</td></tr>
-          <tr><td>Recusa encomenda grande por medo</td><td>Aceita pedidos de até 10 kg com as quantidades na mão</td></tr>
-          <tr><td>"Acho que rende umas 30 fatias"</td><td>Faixa de fatias por forma, combinada no orçamento</td></tr>
-          <tr><td>Poucos sabores para oferecer</td><td>Cardápio com 17 sabores de recheio</td></tr>
-          <tr><td>"Um dia eu começo a vender"</td><td>Checklist da encomenda para começar já</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="micro center">Qual dessas mudanças faria mais diferença no seu bolso?</p>
-  </div>
-</section>
-
-<!-- =============== 7. CONTEÚDO =============== -->
-<section id="conteudo" class="alt">
-  <div class="wrap">
-    <div class="center narrow">
       <span class="eyebrow">O que você recebe</span>
       <h2>Tudo o que você precisa para vender bolo com lucro</h2>
-      <p class="muted">Um guia prático de <strong>57 páginas em 11 capítulos</strong>, em PDF no tamanho A4, para ler no celular ou imprimir. São 22 receitas-base com variações, tabelas por forma e o lado do negócio.</p>
+      <p class="muted">Guia em PDF de 57 páginas, para ler no celular ou imprimir.</p>
     </div>
-
-    <div style="margin-top:30px">
-      <!-- Módulo 1 -->
-      <article class="mod">
-        <div>
-          <span class="num">Módulo 1 · cap. 07</span>
-          <h3>Tabelas por Forma</h3>
-          <ul class="fbr">
-            <li><b>O que é</b> Para 7 formas, da 17,5×10 à 40×30: massa crua de referência, peso final estimado (1,7 a 10 kg), recheio total e por camada, cobertura e faixa de fatias. Inclui também aros redondos de 11 a 25 cm.</li>
-            <li><b>Benefício</b> Você não precisa mais "chutar" receita e meia</li>
-            <li><b>Resultado</b> Orçamento certo antes de aceitar o pedido, sem prejuízo escondido</li>
-          </ul>
-        </div>
-        <div class="page locked" aria-label="Prévia das tabelas por forma (parcialmente oculta)">
-          <div class="ph-head"><span>Formas e massa</span><span>p. 43–44</span></div>
-          <table>
-            <thead><tr><th>Forma</th><th>Massa crua</th><th>Bolo final</th><th>Recheio</th></tr></thead>
-            <tbody>
-              <tr><td>17,5×10</td><td>400–450 g</td><td>1,7–1,8 kg</td><td>600 g</td></tr>
-              <tr><td>20×15</td><td>800 g</td><td>2,5 kg</td><td>0,8–1 kg</td></tr>
-              <tr class="blur" aria-hidden="true"><td>20×17</td><td>1 kg</td><td>3 kg</td><td>1,2 kg</td></tr>
-              <tr class="blur" aria-hidden="true"><td>25×17</td><td>1,2 kg</td><td>4 kg</td><td>1,6 kg</td></tr>
-              <tr class="blur" aria-hidden="true"><td>30×22</td><td>1,6 kg</td><td>5–5,5 kg</td><td>2–2,2 kg</td></tr>
-              <tr class="blur" aria-hidden="true"><td>36×26</td><td>2,2 kg</td><td>7–8 kg</td><td>2,8 kg</td></tr>
-              <tr class="blur" aria-hidden="true"><td>40×30</td><td>3,2 kg</td><td>10 kg</td><td>4 kg</td></tr>
-            </tbody>
-          </table>
-          <div class="veil"><span>🔒 Tabelas completas no guia</span></div>
-        </div>
-      </article>
-
-      <!-- Módulo 2 -->
-      <article class="mod">
-        <div>
-          <span class="num">Módulo 2 · cap. 01–02</span>
-          <h3>Massas que Sustentam o Bolo</h3>
-          <ul class="fbr">
-            <li><b>O que é</b> Chiffon de baunilha e de chocolate, a versão pelo método híbrido e tabelas de lotes já calculadas de 2 a 16 ovos. Traz também a bancada ideal, o checklist antes de ligar a batedeira e variações de canela, massa vermelha com cacau e limão com mirtilos.</li>
-            <li><b>Benefício</b> Você entende o porquê de cada etapa: claras, incorporação e ponto</li>
-            <li><b>Resultado</b> Bolo no padrão toda vez, o que faz a cliente voltar e indicar</li>
-          </ul>
-        </div>
-        <figure class="page-img"><img src="img/ebook-p09-chiffon.jpg" alt="Página do guia: receita de chiffon de baunilha com ingredientes e passo a passo" width="560" height="792" loading="lazy" decoding="async"></figure>
-      </article>
-
-      <!-- Módulo 3 -->
-      <article class="mod">
-        <div>
-          <span class="num">Módulo 3 · cap. 03–05</span>
-          <h3>Recheios na Medida</h3>
-          <ul class="fbr">
-            <li><b>O que é</b> Calda-base com a dose certa (50 g de calda para cada 100 g de massa assada), brigadeiro branco base em 4 sabores, 10 recheios e mousses, compotas e a tabela de adicionais por kg de bolo.</li>
-            <li><b>Benefício</b> Recheio que sustenta a camada sem escorrer, na quantidade planejada</li>
-            <li><b>Resultado</b> Um cardápio de sabores para vender mais, sem sobra na geladeira</li>
-          </ul>
-          <ul class="chips" aria-label="Sabores incluídos">
-            <li>Leite Ninho</li><li>Trufado de chocolate</li><li>Floresta Negra</li><li>Sensação</li><li>Maracujá</li><li>Limão siciliano</li><li>Ninho com cream cheese</li><li>Nutella</li><li>Tipo Kinder Bueno</li><li>Tipo Raffaello</li><li>Brigadeiro de doce de leite</li><li>Meio amargo</li><li>Beijinho</li><li>Nozes</li><li>Compota de morango</li><li>Compota de abacaxi</li><li>Doce de ameixa</li>
-          </ul>
-        </div>
-        <figure class="page-img"><img src="img/ebook-p24-mousse-ninho.jpg" alt="Página do guia: receita de mousse de leite Ninho" width="560" height="792" loading="lazy" decoding="async"></figure>
-      </article>
-
-      <!-- Módulo 4 -->
-      <article class="mod">
-        <div>
-          <span class="num">Módulo 4 · cap. 06–07</span>
-          <h3>Montagem sem Improviso</h3>
-          <ul class="fbr">
-            <li><b>O que é</b> Chantininho, choconinho e gotinhas para drip cake. Depois, o esquema de camadas, a montagem em 8 passos, a divisão do recheio por camada e o teste de corte das fatias.</li>
-            <li><b>Benefício</b> Chega de lado mais pesado, recheio escapando ou cobertura faltando</li>
-            <li><b>Resultado</b> Bolo com cara de encomenda, que justifica um preço melhor</li>
-          </ul>
-        </div>
-        <figure class="page-img"><img src="img/ebook-p41-camadas.jpg" alt="Página do guia: esquema de camadas com três placas de massa e duas de recheio" width="560" height="792" loading="lazy" decoding="async"></figure>
-      </article>
-
-      <!-- Módulo 5 -->
-      <article class="mod">
-        <div>
-          <span class="num">Módulo 5 · cap. 08–11</span>
-          <h3>Do Pedido à Entrega</h3>
-          <ul class="fbr">
-            <li><b>O que é</b> Ficha de custo com a fórmula de preço, checklist da encomenda, rotina de produção, base e caixa certas para cada forma, conservação segundo a ANVISA, a tabela "quando algo não sai como esperado" e a ficha de teste para registrar cada lote.</li>
-            <li><b>Benefício</b> Acaba o "cobrei igual à vizinha" e os imprevistos na entrega</li>
-            <li><b>Resultado</b> Preço que paga ingredientes, embalagem, gás e o seu trabalho, e ainda sobra lucro</li>
-          </ul>
-        </div>
-        <figure class="page-img"><img src="img/ebook-p52-preco.jpg" alt="Página do guia: ficha de custo e exemplo de cálculo de preço" width="560" height="792" loading="lazy" decoding="async"></figure>
-      </article>
+    <ul class="items">
+      <li><span class="ic" aria-hidden="true">📐</span><div><b>Quantidade certa para cada forma</b>Massa, recheio, cobertura e fatias para 7 formas, de 1,7 a 10 kg. Você orça antes de aceitar o pedido.</div></li>
+      <li><span class="ic" aria-hidden="true">🍰</span><div><b>22 receitas para o seu cardápio</b>Massas, calda, brigadeiro base e 17 sabores de recheio, com passo a passo e ponto certo.</div></li>
+      <li><span class="ic" aria-hidden="true">🎂</span><div><b>Montagem com cara de encomenda</b>Coberturas, camadas e montagem em 8 passos: bolo reto e bonito, que vale um preço melhor.</div></li>
+      <li><span class="ic" aria-hidden="true">💰</span><div><b>Preço que dá lucro</b>Ficha de custo com a fórmula de preço, para cobrar o que paga ingredientes, gás, embalagem e o seu trabalho.</div></li>
+      <li><span class="ic" aria-hidden="true">📦</span><div><b>Do pedido à entrega</b>Checklist da encomenda, embalagem, conservação e o que fazer quando algo não sai como esperado.</div></li>
+    </ul>
+    <div class="page locked preview" aria-label="Prévia das tabelas por forma (parcialmente oculta)">
+      <div class="ph-head"><span>Tabela por forma</span><span>p. 43–44</span></div>
+      <table>
+        <thead><tr><th>Forma</th><th>Massa crua</th><th>Bolo final</th><th>Recheio</th></tr></thead>
+        <tbody>
+          <tr><td>17,5×10</td><td>400–450 g</td><td>1,7–1,8 kg</td><td>600 g</td></tr>
+          <tr><td>20×15</td><td>800 g</td><td>2,5 kg</td><td>0,8–1 kg</td></tr>
+          <tr class="blur" aria-hidden="true"><td>25×17</td><td>1,2 kg</td><td>4 kg</td><td>1,6 kg</td></tr>
+          <tr class="blur" aria-hidden="true"><td>30×22</td><td>1,6 kg</td><td>5–5,5 kg</td><td>2–2,2 kg</td></tr>
+          <tr class="blur" aria-hidden="true"><td>40×30</td><td>3,2 kg</td><td>10 kg</td><td>4 kg</td></tr>
+        </tbody>
+      </table>
+      <div class="veil"><span>🔒 Tabelas completas no guia</span></div>
     </div>
-
-    <div style="margin-top:30px">
-      <a class="cta" href="#oferta" data-checkout>Quero começar a vender com lucro<small><span data-installments>[N]x de R$ [X,XX]</span> · PDF de 57 páginas</small></a>
+    <div style="margin-top:26px">
+      <a class="cta" href="#oferta" data-checkout>Quero começar a vender com lucro<small><span data-installments>[N]x de R$ [X,XX]</span> · acesso imediato</small></a>
     </div>
   </div>
 </section>
 
-<!-- =============== 8. GALERIA =============== -->
-<section id="galeria">
+<!-- =============== 5. GALERIA =============== -->
+<section id="galeria" class="alt">
   <div class="wrap">
     <div class="center narrow">
       <span class="eyebrow">O método na prática</span>
@@ -770,8 +488,8 @@ body>footer p{margin:0 0 .8em}
   </div>
 </section>
 
-<!-- =============== 9. DEPOIMENTOS =============== -->
-<section id="depoimentos" class="alt">
+<!-- =============== 6. DEPOIMENTOS =============== -->
+<section id="depoimentos">
   <div class="wrap">
     <div class="center narrow">
       <span class="eyebrow">Quem já usa</span>
@@ -801,7 +519,26 @@ body>footer p{margin:0 0 .8em}
   </div>
 </section>
 
-<!-- =============== 10. OFERTA =============== -->
+<!-- =============== 7. QUEM É A MARY =============== -->
+<section id="historia" class="alt">
+  <div class="wrap story-grid">
+    <figure class="ph-img" data-src="img/autora-cozinha.jpg" data-alt="Mary, confeiteira, sorrindo na cozinha ao lado de um bolo retangular recém-assado" style="aspect-ratio:4/5">
+      <div class="ph-label">Foto real da autora<b>img/autora-cozinha.jpg</b></div>
+    </figure>
+    <div>
+      <span class="eyebrow">Quem vai te ensinar</span>
+      <h2>Oi, eu sou a <span data-c="autora">[AUTORA]</span>.</h2>
+      <p>Comecei na minha própria cozinha, fazendo bolos para a família e os amigos, sem equipamento profissional. Aprendi na prática: <strong>testei receitas, errei massas, ajustei recheios</strong> e fui criando uma forma organizada de trabalhar.</p>
+      <p>Em <strong>10 anos</strong>, transformei a confeitaria em profissão e me especializei em <strong>bolos retangulares</strong>. Neste guia está tudo o que aprendi, para você vender com mais segurança sem precisar errar como eu errei.</p>
+      <div class="stats">
+        <div class="stat"><b data-c="anos">[X]</b><span>anos de confeitaria</span></div>
+        <div class="stat"><b data-c="alunas">[N]</b><span>alunas e clientes</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== 8. OFERTA =============== -->
 <section id="oferta">
   <div class="wrap">
     <div class="center narrow" style="margin-bottom:26px">
@@ -840,7 +577,7 @@ body>footer p{margin:0 0 .8em}
   </div>
 </section>
 
-<!-- =============== 11. GARANTIA =============== -->
+<!-- =============== 9. GARANTIA =============== -->
 <section id="garantia" class="alt">
   <div class="wrap narrow guar">
     <svg class="seal" viewBox="0 0 200 200" role="img" aria-label="Selo de garantia de 7 dias">
@@ -863,7 +600,7 @@ body>footer p{margin:0 0 .8em}
   </div>
 </section>
 
-<!-- =============== 12. FAQ =============== -->
+<!-- =============== 10. FAQ =============== -->
 <section id="faq">
   <div class="wrap narrow faq">
     <div class="center">
@@ -877,32 +614,11 @@ body>footer p{margin:0 0 .8em}
       <details><summary>Já vendo bolos. O que muda para mim?</summary>
         <div class="ans"><p>Você passa a ver onde o dinheiro está escapando: <strong>sobra de recheio, massa refeita e preço abaixo do custo</strong>. Com as tabelas por forma, você orça e compra na medida. Com a ficha de custo, confere se o seu preço está dando lucro. E ainda ganha novos sabores para oferecer e a segurança de aceitar encomendas de até 10 kg.</p></div></details>
 
-      <details><summary>Em que formato eu recebo o material?</summary>
-        <div class="ans"><p>É um guia em <strong>PDF de 57 páginas</strong>, organizado em 11 capítulos, com sumário para achar cada receita rápido. Abre no celular, tablet ou computador, sem instalar nada.</p></div></details>
-
-      <details><summary>Posso imprimir?</summary>
-        <div class="ans"><p>Pode. O PDF está no tamanho <strong>A4</strong> e sai bem em impressora comum. Se preferir, imprima só as tabelas e a ficha de teste para consultar na bancada.</p></div></details>
-
-      <details><summary>Sou iniciante. Vou conseguir usar?</summary>
-        <div class="ans"><p>Sim. O guia começa pelo básico: os utensílios da bancada, o checklist antes de ligar a batedeira e como pesar os ingredientes. Cada receita tem o passo a passo, "como reconhecer o ponto" e uma dica de produção. Se você sabe usar uma balança de cozinha, você consegue.</p></div></details>
-
-      <details><summary>Tem receitas ou são só tabelas?</summary>
-        <div class="ans"><p>Os dois. São <strong>22 receitas-base</strong> com variações: 4 massas (chiffon de baunilha e de chocolate, e as versões pelo método híbrido), calda, brigadeiro branco base com 4 sabores, 10 recheios e mousses (como leite Ninho, trufado de chocolate, maracujá, tipo Kinder Bueno e tipo Raffaello), 3 compotas e doces de fruta e 3 coberturas (chantininho, choconinho e drip cake).</p></div></details>
-
-      <details><summary>Minha forma é de um tamanho diferente. Funciona?</summary>
-        <div class="ans"><p>As tabelas trazem <strong>7 formas retangulares</strong> (17,5×10, 20×15, 20×17, 25×17, 30×22, 36×26 e 40×30) e as massas vêm em <strong>lotes calculados de 2 a 16 ovos</strong>, para você ajustar a quantidade. Numa forma de outra medida, use a mais próxima como ponto de partida (o conversor aqui da página ajuda na estimativa) e registre o resultado na ficha de teste.</p></div></details>
-
-      <details><summary>Serve para bolo redondo?</summary>
-        <div class="ans"><p>O foco é o <strong>bolo retangular</strong>, mas o guia traz uma tabela complementar de <strong>aros redondos de 11 a 25 cm</strong> (0,6 a 5 kg) com massa crua, calda, recheio e cobertura de referência. Bolo de andar e decoração artística não fazem parte do material.</p></div></details>
+      <details><summary>Como é o material?</summary>
+        <div class="ans"><p>Um guia em <strong>PDF de 57 páginas</strong>, em A4, para ler no celular ou imprimir e consultar na bancada. Não tem videoaula: é direto ao ponto. O arquivo é seu para baixar e guardar.</p></div></details>
 
       <details><summary>Vai dar certo de primeira no meu forno?</summary>
         <div class="ans"><p>As quantidades das tabelas são <strong>pontos de partida</strong>. Cada forno, forma e marca de ingrediente muda um pouco o resultado. Por isso, o guia recomenda fazer um lote-piloto e traz uma <strong>ficha de teste</strong> para anotar peso, tempo e altura, e mais uma tabela de soluções para quando algo não sai como esperado. Com isso, a referência vira o padrão da sua cozinha.</p></div></details>
-
-      <details><summary>O guia fala de validade e conservação?</summary>
-        <div class="ans"><p>Fala, com base nas boas práticas da ANVISA (RDC 216). O guia explica resfriamento, refrigeração e identificação, e deixa claro que não existe uma validade única para todos os bolos: ela depende da receita, da higiene e da temperatura.</p></div></details>
-
-      <details><summary>Tem videoaula?</summary>
-        <div class="ans"><p>Não. É um guia de consulta rápida em PDF. A ideia é você abrir, achar a receita ou o número e voltar para a cozinha, sem assistir horas de vídeo.</p></div></details>
 
       <details><summary>Como e quando eu recebo o acesso?</summary>
         <div class="ans"><p>Na hora. Assim que o pagamento é aprovado, você recebe no seu e-mail o acesso pela <span data-c="plataforma">[PLATAFORMA]</span>. No Pix e no cartão, a aprovação costuma sair em minutos. Não chegou? Olhe a caixa de spam ou promoções<span data-c-wrap="contatoEmail">, ou me escreva em <span data-c="contatoEmail">[E-MAIL]</span></span>.</p></div></details>
@@ -915,40 +631,22 @@ body>footer p{margin:0 0 .8em}
 
       <details><summary>Vou ganhar dinheiro com certeza?</summary>
         <div class="ans"><p>Eu não posso te prometer isso, e desconfie de quem promete. O que o guia entrega é <strong>organização e referência</strong>: menos desperdício, bolos no padrão e preço calculado com o seu custo real. Quanto você vende depende do seu trabalho, da sua região e da sua divulgação.</p></div></details>
-
-      <details><summary>Por quanto tempo eu tenho acesso?</summary>
-        <div class="ans"><p>O PDF é seu: baixe e guarde no celular, no computador ou impresso. <!-- confirme o prazo de acesso na plataforma --></p></div></details>
     </div>
-    <p class="micro center" style="margin-top:20px">Ficou alguma dúvida? <a href="#oferta" data-checkout>Garanta o seu com 7 dias de garantia</a> e teste na prática.</p>
   </div>
 </section>
 
-<!-- =============== 13. DUAS ESCOLHAS =============== -->
+<!-- =============== 11. FECHAMENTO =============== -->
 <section id="escolha" class="dark">
-  <div class="wrap narrow">
-    <div class="center">
-      <span class="eyebrow">Agora é com você</span>
-      <h2>Você tem duas escolhas</h2>
-    </div>
-    <div class="choices">
-      <div class="choice a">
-        <h3>1. Continuar como está</h3>
-        <p class="muted">Trabalhando muito e lucrando pouco. Preço no chute, recheio sobrando, encomenda grande recusada. Ou adiando mais uma vez o começo das vendas.</p>
-      </div>
-      <div class="choice b">
-        <h3>2. Fazer o bolo virar renda</h3>
-        <p>Cardápio de sabores, quantidade certa para cada forma e preço calculado com lucro. <strong>Já na próxima encomenda</strong>, com 7 dias de garantia.</p>
-      </div>
-    </div>
-    <p class="center" style="font-family:var(--serif);font-size:1.3rem;color:#fff">Não é talento. É método.</p>
-    <a class="cta" href="#oferta" data-checkout>Quero fazer meus bolos virarem renda<small><span data-installments>[N]x de R$ [X,XX]</span> ou <span data-price>R$ [XX]</span> à vista</small></a>
-    <p class="cta-note">Acesso imediato · Pix ou cartão · Garantia de 7 dias</p>
+  <div class="wrap narrow center">
+    <h2>Faça o seu próximo bolo valer a pena</h2>
+    <p class="muted">Receitas, quantidade certa e preço com lucro por <strong style="color:#fff" data-price>R$ [XX]</strong>, com 7 dias de garantia.</p>
+    <a class="cta" href="#oferta" data-checkout style="margin-top:20px">Quero fazer meus bolos virarem renda<small>Acesso imediato no seu e-mail</small></a>
   </div>
 </section>
 
 </main>
 
-<!-- =============== 14. RODAPÉ =============== -->
+<!-- =============== 12. RODAPÉ =============== -->
 <footer>
   <div class="wrap narrow">
     <p><strong data-c="produto">[NOME DO PRODUTO]</strong> · <span data-c="razaoSocial">[RAZÃO SOCIAL]</span><span data-c-wrap="cnpj"> · CNPJ <span data-c="cnpj">[CNPJ]</span></span></p>
@@ -1079,32 +777,6 @@ body>footer p{margin:0 0 .8em}
     var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ swap(e.target); io.unobserve(e.target); } }); }, { rootMargin: "300px" });
     figs.forEach(function(f){ io.observe(f); });
   } else figs.forEach(swap);
-
-  /* ---------- Conversor de forma (dica gratuita) ---------- */
-  var FORMS = [["17,5×10",17.5,10],["20×15",20,15],["20×17",20,17],["25×17",25,17],["30×22",30,22],["36×26",36,26],["40×30",40,30],["Outra medida",0,0]];
-  var fromSel = $("#fromSel"), toSel = $("#toSel");
-  FORMS.forEach(function(f, i){
-    fromSel.add(new Option(f[0], i)); toSel.add(new Option(f[0], i));
-  });
-  fromSel.value = 1; toSel.value = 6;
-  var dims = function(sel, w, h){
-    var f = FORMS[+sel.value];
-    return f[1] ? [f[1], f[2]] : [+$(w).value || 0, +$(h).value || 0];
-  };
-  var fmt = function(n, d){ return n.toLocaleString("pt-BR",{minimumFractionDigits:d,maximumFractionDigits:d}); };
-  function calc(){
-    $("#fromCustom").style.display = FORMS[+fromSel.value][1] ? "none" : "grid";
-    $("#toCustom").style.display   = FORMS[+toSel.value][1]   ? "none" : "grid";
-    var a = dims(fromSel, "#fromW", "#fromH"), b = dims(toSel, "#toW", "#toH");
-    var A = a[0]*a[1], B = b[0]*b[1];
-    if (!A || !B) { $("#factor").textContent = "—"; $("#explain").textContent = "Preencha as medidas."; return; }
-    var k = B / A, q = +$("#qty").value || 0;
-    $("#factor").textContent = "× " + fmt(k, 2);
-    $("#explain").innerHTML = "Área: <strong>" + fmt(A,0) + " cm²</strong> → <strong>" + fmt(B,0) + " cm²</strong>." +
-      (q ? "<br>Ex.: " + fmt(q,0) + " g viram <strong>" + fmt(Math.round(q*k),0) + " g</strong>." : "");
-  }
-  ["#fromSel","#toSel","#fromW","#fromH","#toW","#toH","#qty"].forEach(function(s){ $(s).addEventListener("input", calc); });
-  calc();
 
   $("#year").textContent = new Date().getFullYear();
 })();
