@@ -184,6 +184,14 @@ section{padding:52px 0}
 .items div b{color:var(--ink)}
 .preview{max-width:460px;margin:0 auto}
 
+/* Fotos da Mary */
+.photo-sell{margin:24px auto 0;max-width:360px}
+.photo-sell img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 55%;border-radius:18px;box-shadow:var(--shadow)}
+.photo-sell figcaption{text-align:center;font-size:.9rem;color:var(--muted);margin-top:10px;font-style:italic}
+.closing-avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:50% 24%;margin:0 auto 18px;border:4px solid var(--on-cacao);box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
+.signature{margin:22px 0 0;color:var(--on-cacao-muted);font-size:.95rem;line-height:1.3}
+.signature span{font:600 1.6rem/1.2 var(--serif);color:#fff}
+
 /* Dois caminhos */
 .path h3{margin-top:10px}
 .path-tag{display:inline-block;font-size:.8rem;font-weight:700;background:var(--rose-soft);color:#6E2B39;border-radius:999px;padding:5px 11px}
@@ -382,6 +390,10 @@ body>footer p{margin:0 0 .8em}
       <span class="eyebrow">Para as duas fases</span>
       <h2>Começando do zero ou já vendendo, o guia te ajuda a ganhar mais com bolo</h2>
     </div>
+    <figure class="photo-sell">
+      <img src="img/mary-embalando.jpg" alt="Mary embalando fatias de bolo em caixas para entrega" width="720" height="1284" loading="lazy" decoding="async">
+      <figcaption>Do forno para a caixa: é assim que bolo vira renda.</figcaption>
+    </figure>
     <div class="who" style="margin-top:26px">
       <div class="card path">
         <span class="path-tag">🌱 Se você está começando</span>
@@ -638,9 +650,11 @@ body>footer p{margin:0 0 .8em}
 <!-- =============== 11. FECHAMENTO =============== -->
 <section id="escolha" class="dark">
   <div class="wrap narrow center">
+    <img class="closing-avatar" src="img/mary-bolo-pronto.jpg" alt="Mary sorrindo com um bolo retangular pronto nas mãos" width="480" height="856" loading="lazy" decoding="async">
     <h2>Faça o seu próximo bolo valer a pena</h2>
     <p class="muted">Receitas, quantidade certa e preço com lucro por <strong style="color:#fff" data-price>R$ [XX]</strong>, com 7 dias de garantia.</p>
     <a class="cta" href="#oferta" data-checkout style="margin-top:20px">Quero fazer meus bolos virarem renda<small>Acesso imediato no seu e-mail</small></a>
+    <p class="signature">Com carinho,<br><span>Mary</span></p>
   </div>
 </section>
 
