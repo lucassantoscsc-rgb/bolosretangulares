@@ -162,7 +162,7 @@ section{padding:52px 0}
 .cost td{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.14);vertical-align:top}
 .cost td:last-child{text-align:right;white-space:nowrap;padding-left:10px;font-weight:700}
 .cost tr.total td{border-bottom:0;font-size:1.1rem;color:#F0B9C1;padding-top:14px}
-.cost .fine{font-size:.82rem;color:var(--on-cacao-muted);margin:12px 0 0}
+.cost .fine{font-size:.88rem;color:var(--on-cacao-muted);margin:12px 0 0}
 
 /* Mechanism */
 .forms{display:flex;align-items:flex-end;justify-content:center;gap:22px;margin:26px 0;flex-wrap:wrap}
@@ -246,6 +246,17 @@ section{padding:52px 0}
 .gallery figcaption{font-size:.84rem;margin-top:8px;line-height:1.4}
 .gallery figcaption b{display:block;color:var(--ink)}
 
+/* Celular: galeria em carrossel e páginas do ebook menores */
+.swipe-hint{display:none}
+@media (max-width:759px){
+  .gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:0 16px 10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .gallery::-webkit-scrollbar{display:none}
+  .gallery figure{flex:0 0 74%;scroll-snap-align:center}
+  .swipe-hint{display:block;text-align:center;font-size:.88rem;font-weight:600;color:var(--rose);margin:14px 0 -12px}
+  .page-img{max-width:220px}
+  .mod{padding:18px}
+}
+
 /* Testimonials */
 .tgroup{margin-top:34px}
 .tgroup h3{display:flex;align-items:center;gap:10px;font-size:1.15rem}
@@ -271,7 +282,7 @@ section{padding:52px 0}
 .price .cash{font-size:1rem}
 .roi{background:var(--bg2);border-radius:14px;padding:16px 18px;margin:18px 0;font-size:.98rem}
 .roi b.x{font-family:var(--serif);font-size:1.5rem;color:var(--rose)}
-.roi .fine{font-size:.8rem;color:var(--muted);margin:6px 0 0}
+.roi .fine{font-size:.86rem;color:var(--muted);margin:6px 0 0}
 .urgent-line{display:none;text-align:center;font-weight:700;color:var(--rose);margin:0 0 14px;font-size:.95rem}
 
 /* Guarantee */
@@ -357,7 +368,7 @@ body>footer p{margin:0 0 .8em}
 
     <div class="hero-mock">
       <div class="mock" aria-label="Capa do ebook Bolos Retangulares da Mary">
-        <img class="sheet-img" src="img/ebook-p09-chiffon.jpg" alt="" aria-hidden="true" width="560" height="792" loading="lazy" decoding="async">
+        <img class="sheet-img" src="img/ebook-p09-chiffon.jpg" alt="" aria-hidden="true" width="560" height="792" decoding="async">
         <img class="cover-img" src="img/ebook-capa.jpg" alt="Capa do ebook Bolos Retangulares da Mary, guia prático" width="640" height="905" fetchpriority="high" decoding="async">
       </div>
     </div>
@@ -680,6 +691,7 @@ body>footer p{margin:0 0 .8em}
       <h2>Camadas retas, recheio por igual, acabamento de encomenda</h2>
       <p class="muted">Bolos retangulares reais, por dentro e por fora. Repare no corte: é ali que a medida certa aparece.</p>
     </div>
+    <p class="swipe-hint" aria-hidden="true">Arraste para o lado para ver mais →</p>
     <div class="gallery" style="margin-top:26px">
       <figure><img src="img/galeria-01.jpg" alt="Corte que mostra o método: Massa vermelha em camadas retas, com recheio por igual" width="400" height="450" loading="lazy" decoding="async">
         <figcaption><b>Corte que mostra o método</b>Massa vermelha em camadas retas, com recheio por igual</figcaption></figure>
