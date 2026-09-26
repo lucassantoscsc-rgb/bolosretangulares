@@ -257,15 +257,20 @@ section{padding:52px 0}
   .mod{padding:18px}
 }
 
-/* Testimonials */
-.tgroup{margin-top:34px}
-.tgroup h3{display:flex;align-items:center;gap:10px;font-size:1.15rem}
-.tgroup h3 span{font:700 .72rem/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;background:var(--rose-soft);color:#6E2B39;border-radius:999px;padding:6px 10px}
-.tcards{display:grid;gap:14px;margin-top:12px}
-.tcard{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px;position:relative}
-.tcard .res{font:700 1.08rem/1.35 var(--sans);margin-bottom:8px}
-.tcard .who-t{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:.9rem}
-.tcard .av{width:40px;height:40px;border-radius:50%;background:var(--rose-soft);color:#6E2B39;flex:none;display:flex;align-items:center;justify-content:center;font:700 1rem/1 var(--serif)}
+/* Prints de conversas */
+.prints{display:grid;gap:16px}
+.print{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.print figcaption{margin:2px 4px 12px}
+.print figcaption b{display:block;font-size:1.02rem;line-height:1.35}
+.print figcaption span{display:block;font-size:.85rem;color:var(--muted);margin-top:4px}
+.print img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+@media (min-width:760px){.prints{grid-template-columns:1fr 1fr;max-width:900px;margin-left:auto;margin-right:auto}}
+@media (max-width:759px){
+  .prints{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:0 16px 10px;scrollbar-width:none}
+  .prints::-webkit-scrollbar{display:none}
+  .print{flex:0 0 82%;scroll-snap-align:center}
+}
+
 
 /* Offer */
 .offer{background:var(--paper);border:2px solid var(--cacao);border-radius:22px;padding:26px 18px;box-shadow:var(--shadow);max-width:640px;margin:0 auto}
@@ -734,52 +739,29 @@ body>footer p{margin:0 0 .8em}
   <div class="wrap">
     <div class="center narrow">
       <span class="eyebrow">Quem já usa</span>
-      <h2>O que as alunas dizem</h2>
-      <p class="muted">Depoimentos reais de alunas do método, com nome e cidade.</p>
+      <h2>O que as alunas contam para a Mary</h2>
+      <p class="muted">Prints reais de conversas com alunas e clientes, depois de colocarem o guia em prática.</p>
     </div>
-    <div class="tgroup">
-      <h3><span>Objeção</span> "Sou iniciante, será que consigo?"</h3>
-      <div class="tcards">
-        <blockquote class="tcard" style="margin:0">
-          <p class="res">"Fiz meu primeiro bolo retangular vendido e a cliente pediu outro"</p>
-          <footer class="who-t"><span class="av" aria-hidden="true">M</span><span><strong>Mariana S.</strong> · Campinas/SP</span></footer>
-        </blockquote>
-        <blockquote class="tcard" style="margin:0">
-          <p class="res">"Divulguei melhor e fechei minhas primeiras encomendas pagas"</p>
-          <footer class="who-t"><span class="av" aria-hidden="true">C</span><span><strong>Camila A.</strong> · Fortaleza/CE</span></footer>
-        </blockquote>
-      </div>
+    <p class="swipe-hint" aria-hidden="true">Arraste para o lado para ver mais →</p>
+    <div class="prints" style="margin-top:26px">
+      <figure class="print">
+        <figcaption><b>"Anotei tudo e agora sei o que quero ajustar na próxima vez."</b><span>Carolina, sobre as explicações das formas</span></figcaption>
+        <img src="img/print-01.jpg" alt="Print de conversa de Carolina com a Mary: Anotei tudo e agora sei o que quero ajustar na próxima vez." width="640" height="830" loading="lazy" decoding="async">
+      </figure>
+      <figure class="print">
+        <figcaption><b>"Achei a linguagem simples, consegui entender mesmo sendo iniciante."</b><span>Fernanda, iniciante</span></figcaption>
+        <img src="img/print-02.jpg" alt="Print de conversa de Fernanda com a Mary: Achei a linguagem simples, consegui entender mesmo sendo iniciante." width="640" height="771" loading="lazy" decoding="async">
+      </figure>
+      <figure class="print">
+        <figcaption><b>"Terminei sem aquela correria de sempre."</b><span>Renata, sobre a montagem</span></figcaption>
+        <img src="img/print-03.jpg" alt="Print de conversa de Renata com a Mary: Terminei sem aquela correria de sempre." width="640" height="836" loading="lazy" decoding="async">
+      </figure>
+      <figure class="print">
+        <figcaption><b>"Gostei de poder consultar a tabela enquanto separava os ingredientes."</b><span>Paula, sobre as quantidades</span></figcaption>
+        <img src="img/print-04.jpg" alt="Print de conversa de Paula com a Mary: Gostei de poder consultar a tabela enquanto separava os ingredientes." width="640" height="788" loading="lazy" decoding="async">
+      </figure>
     </div>
-
-    <div class="tgroup">
-      <h3><span>Objeção</span> "Meu bolo não fica com cara de encomenda"</h3>
-      <div class="tcards">
-        <blockquote class="tcard" style="margin:0">
-          <p class="res">"Meus bolos agora saem altos, retos e com cara de encomenda"</p>
-          <footer class="who-t"><span class="av" aria-hidden="true">J</span><span><strong>Juliana R.</strong> · Goiânia/GO</span></footer>
-        </blockquote>
-        <blockquote class="tcard" style="margin:0">
-          <p class="res">"Montei um bolo retangular firme, alinhado e bonito para entrega"</p>
-          <footer class="who-t"><span class="av" aria-hidden="true">R</span><span><strong>Renata L.</strong> · Belo Horizonte/MG</span></footer>
-        </blockquote>
-      </div>
-    </div>
-
-    <div class="tgroup">
-      <h3><span>Objeção</span> "Não sei cobrar e desperdiço ingrediente"</h3>
-      <div class="tcards">
-        <blockquote class="tcard" style="margin:0">
-          <p class="res">"Agora sei quanto gasto, quanto cobrar e quanto sobra"</p>
-          <footer class="who-t"><span class="av" aria-hidden="true">P</span><span><strong>Patrícia M.</strong> · Recife/PE</span></footer>
-        </blockquote>
-        <blockquote class="tcard" style="margin:0">
-          <p class="res">"Passei a produzir com medida certa e menos desperdício"</p>
-          <footer class="who-t"><span class="av" aria-hidden="true">F</span><span><strong>Fernanda P.</strong> · Curitiba/PR</span></footer>
-        </blockquote>
-      </div>
-    </div>
-
-    <p class="micro center" style="margin-top:28px">A próxima história pode ser a sua, <strong>já na próxima encomenda</strong>.</p>
+    <p class="micro center" style="margin-top:24px">A próxima conversa pode ser a sua, <strong>já na próxima encomenda</strong>.</p>
   </div>
 </section>
 
