@@ -237,7 +237,7 @@ section{padding:64px 0}
 /* Gallery */
 .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .gallery figure{margin:0}
-.gallery .ph-img{aspect-ratio:4/5}
+.gallery img{width:100%;height:auto;aspect-ratio:8/9;object-fit:cover;border-radius:var(--r);background:var(--bg2)}
 .gallery figcaption{font-size:.84rem;margin-top:8px;line-height:1.4}
 .gallery figcaption b{display:block;color:var(--ink)}
 
@@ -663,22 +663,42 @@ body>footer p{margin:0 0 .8em}
   <div class="wrap">
     <div class="center narrow">
       <span class="eyebrow">O método na prática</span>
-      <h2>Bolos feitos com a tabela, com medidas na legenda</h2>
-      <p class="muted">Forma, peso e fatias: a prova está nos números. <!-- Troque [X] pelo peso real de cada bolo fotografado --></p>
+      <h2>Camadas retas, recheio por igual, acabamento de encomenda</h2>
+      <p class="muted">Bolos retangulares reais, por dentro e por fora. Repare no corte: é ali que a medida certa aparece.</p>
     </div>
     <div class="gallery" style="margin-top:26px">
-      <figure><div class="ph-img" data-src="img/bolo-17-5x10.jpg" data-alt="Bolo retangular na forma 17,5×10"><div class="ph-label"><b>img/bolo-17-5x10.jpg</b>1080×1350</div></div>
-        <figcaption><b>Forma 17,5×10 · <span class="ph">[X] kg</span></b>Referência do guia: 1,7 a 1,8 kg · 14 a 16 fatias</figcaption></figure>
-      <figure><div class="ph-img" data-src="img/bolo-20x15.jpg" data-alt="Bolo retangular na forma 20×15"><div class="ph-label"><b>img/bolo-20x15.jpg</b>1080×1350</div></div>
-        <figcaption><b>Forma 20×15 · <span class="ph">[X] kg</span></b>Referência do guia: 2,5 kg · 20 a 24 fatias</figcaption></figure>
-      <figure><div class="ph-img" data-src="img/bolo-25x17.jpg" data-alt="Bolo retangular na forma 25×17"><div class="ph-label"><b>img/bolo-25x17.jpg</b>1080×1350</div></div>
-        <figcaption><b>Forma 25×17 · <span class="ph">[X] kg</span></b>Referência do guia: 4 kg · 35 a 40 fatias</figcaption></figure>
-      <figure><div class="ph-img" data-src="img/bolo-30x22.jpg" data-alt="Bolo retangular na forma 30×22"><div class="ph-label"><b>img/bolo-30x22.jpg</b>1080×1350</div></div>
-        <figcaption><b>Forma 30×22 · <span class="ph">[X] kg</span></b>Referência do guia: 5 a 5,5 kg · 45 a 55 fatias</figcaption></figure>
-      <figure><div class="ph-img" data-src="img/bolo-36x26.jpg" data-alt="Bolo retangular na forma 36×26"><div class="ph-label"><b>img/bolo-36x26.jpg</b>1080×1350</div></div>
-        <figcaption><b>Forma 36×26 · <span class="ph">[X] kg</span></b>Referência do guia: 7 a 8 kg · 70 a 80 fatias</figcaption></figure>
-      <figure><div class="ph-img" data-src="img/bolo-40x30.jpg" data-alt="Bolo retangular na forma 40×30"><div class="ph-label"><b>img/bolo-40x30.jpg</b>1080×1350</div></div>
-        <figcaption><b>Forma 40×30 · <span class="ph">[X] kg</span></b>Referência do guia: 10 kg · 90 a 100 fatias</figcaption></figure>
+      <figure><img src="img/galeria-01.jpg" alt="Corte que mostra o método: Massa vermelha em camadas retas, com recheio por igual" width="400" height="450" loading="lazy" decoding="async">
+        <figcaption><b>Corte que mostra o método</b>Massa vermelha em camadas retas, com recheio por igual</figcaption></figure>
+      <figure><img src="img/galeria-02.jpg" alt="Fatias iguais: Chocolate com 3 camadas de massa e recheio na mesma altura" width="400" height="450" loading="lazy" decoding="async">
+        <figcaption><b>Fatias iguais</b>Chocolate com 3 camadas de massa e recheio na mesma altura</figcaption></figure>
+      <figure><img src="img/galeria-03.jpg" alt="Acabamento de encomenda: Laterais lisas e retas, com corações e cerejas" width="400" height="450" loading="lazy" decoding="async">
+        <figcaption><b>Acabamento de encomenda</b>Laterais lisas e retas, com corações e cerejas</figcaption></figure>
+      <figure><img src="img/galeria-04.jpg" alt="Duas coberturas no mesmo bolo: Chocolate e chocolate branco, com drip" width="400" height="450" loading="lazy" decoding="async">
+        <figcaption><b>Duas coberturas no mesmo bolo</b>Chocolate e chocolate branco, com drip</figcaption></figure>
+      <figure><img src="img/galeria-05.jpg" alt="Corte limpo: Camadas alinhadas do topo até a base" width="400" height="450" loading="lazy" decoding="async">
+        <figcaption><b>Corte limpo</b>Camadas alinhadas do topo até a base</figcaption></figure>
+      <figure><img src="img/galeria-06.jpg" alt="Quinas bem marcadas: Laterais retas com drip de chocolate branco" width="400" height="450" loading="lazy" decoding="async">
+        <figcaption><b>Quinas bem marcadas</b>Laterais retas com drip de chocolate branco</figcaption></figure>
+      <figure><img src="img/galeria-07.jpg" alt="Montagem sem improviso: Massa nivelada e recheio distribuído antes da cobertura" width="400" height="450" loading="lazy" decoding="async">
+        <figcaption><b>Montagem sem improviso</b>Massa nivelada e recheio distribuído antes da cobertura</figcaption></figure>
+      <figure><img src="img/galeria-08.jpg" alt="Pronto para vender em fatias: Massa com mirtilos, cortada e porcionada" width="400" height="450" loading="lazy" decoding="async">
+        <figcaption><b>Pronto para vender em fatias</b>Massa com mirtilos, cortada e porcionada</figcaption></figure>
+      <figure><img src="img/galeria-09.jpg" alt="Vários sabores, o mesmo padrão: Quatro bolos cortados, todos com camadas uniformes" width="400" height="450" loading="lazy" decoding="async">
+        <figcaption><b>Vários sabores, o mesmo padrão</b>Quatro bolos cortados, todos com camadas uniformes</figcaption></figure>
+      <figure><img src="img/galeria-10.jpg" alt="Recheio que sustenta: Camadas firmes, sem escorrer depois do corte" width="400" height="450" loading="lazy" decoding="async">
+        <figcaption><b>Recheio que sustenta</b>Camadas firmes, sem escorrer depois do corte</figcaption></figure>
+      <figure><img src="img/galeria-11.jpg" alt="Estrutura por dentro: Cortes mostrando a altura de massa e recheio" width="400" height="450" loading="lazy" decoding="async">
+        <figcaption><b>Estrutura por dentro</b>Cortes mostrando a altura de massa e recheio</figcaption></figure>
+      <figure><img src="img/galeria-12.jpg" alt="Acabamento clássico: Bolos brancos com laterais retas e bicos delicados" width="400" height="450" loading="lazy" decoding="async">
+        <figcaption><b>Acabamento clássico</b>Bolos brancos com laterais retas e bicos delicados</figcaption></figure>
+      <figure><img src="img/galeria-13.jpg" alt="Massa leve e aerada: Placas de massa vermelha, prontas para rechear" width="400" height="450" loading="lazy" decoding="async">
+        <figcaption><b>Massa leve e aerada</b>Placas de massa vermelha, prontas para rechear</figcaption></figure>
+      <figure><img src="img/galeria-14.jpg" alt="Camada por camada: Montagem na forma: massa com mirtilos e recheio" width="400" height="450" loading="lazy" decoding="async">
+        <figcaption><b>Camada por camada</b>Montagem na forma: massa com mirtilos e recheio</figcaption></figure>
+    </div>
+    <p class="micro center" style="margin-top:24px">Quer que os seus bolos fiquem assim no corte? 👇</p>
+    <div style="margin-top:14px">
+      <a class="cta" href="#oferta" data-checkout>Quero fazer bolos assim<small><span data-installments>[N]x de R$ [X,XX]</span></small></a>
     </div>
   </div>
 </section>
